@@ -4,23 +4,23 @@ with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 ## edit below variables as per your requirements -
-REPO_NAME = "Tranfer_learning_DLCVNL_demo"
-AUTHOR_USER_NAME = "c17hawke"
+REPO_NAME = "TransferLearningDemo"
+AUTHOR_USER_NAME = "Hassi34"
 SRC_REPO = "src"
-LIST_OF_REQUIREMENTS = []
+LIST_OF_REQUIREMENTS = ["tqdm", "pandas", "numpy", "PyYAML", "tensorflow"]
 
 
 setup(
-    name=SRC_REPO,
+    name=f"{REPO_NAME}-{AUTHOR_USER_NAME}",
     version="0.0.1",
     author=AUTHOR_USER_NAME,
-    description="Trasnfer learning demo for DLCVNLP Aug",
+    description="Trasnfer learning demo",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
-    author_email="sunny.c17hawke@gmail.com",
+    author_email="hasnainmehmood3435@gmail.com",
     packages=[SRC_REPO],
     license="MIT",
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     install_requires=LIST_OF_REQUIREMENTS
 )
