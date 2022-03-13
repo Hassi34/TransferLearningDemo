@@ -19,7 +19,7 @@ logging.basicConfig(
 
 def update_greater_than_less_than_5(list_of_labels):
     for idx, label in enumerate(list_of_labels):
-        even_condition = label%2 == 0 ## CHANGE THE CONDITION
+        even_condition = label >= 5 ## CHANGE THE CONDITION
         list_of_labels[idx] = np.where(even_condition, 1, 0)
     return list_of_labels
 
@@ -36,7 +36,7 @@ def main(config_path):
     y_valid, y_train = y_train_full[:5000], y_train_full[5000:]
 
 
-    y_train_bin, y_test_bin, y_valid_bin = update_even_odd_labels([y_train, y_test, y_valid])
+    y_train_bin, y_test_bin, y_valid_bin = update_greater_than_less_than_5([y_train, y_test, y_valid])
 
     ## set the seeds
     seed = 2021 ## get it from config

@@ -1,11 +1,5 @@
-# generic-python-project-template
-generic-python-project-template
-
-## ASSIGNMENT
-
-* Use time module to oberve the training time
-* Check with sigmoid function at output layer by using single unit, loss function binary_crossentropy 
-* Observe the starting accuracy of the training
+# Transfer Learning Demo
+Transfer Learning Demo
 
 ## STEPS -
 
@@ -16,7 +10,7 @@ generic-python-project-template
 ### STEP 03- Create a conda environment after opening the repository in VSCODE
 
 ```bash
-conda create --prefix ./env python=3.7 -y
+conda create --prefix ./env python=3.9 -y
 ```
 
 ```bash
